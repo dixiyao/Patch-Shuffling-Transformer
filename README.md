@@ -79,7 +79,7 @@ Or you can train Cifar with PatchShuffling:
 ```
 python3 main.py --dataset=cifar10 --k=1. --b 64 --datapath=your-path-to-dataset
 ```
-The argument $k$ here is the same $k$ in the paper. If $k=1$, it is patch shuffling. If $0<k<1$, it is batch shuffling.  
+The argument $k$ here is the same $k$ in the paper. If $k=1$, it is patch shuffling. If $k<1$, it is batch shuffling.  
 
 **Train with SpectralShuffling**  
 The training with spectral shuffling is very similar to on the time domain. We just need to turn the computing into
