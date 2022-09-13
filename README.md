@@ -5,8 +5,7 @@ Official Code for ICDM 2022 paper: Privacy-Preserving Split Learning via Patch S
 [[Paper]]() [[BibTex]]() [[Website]]()
 
 ## Requirements
-```torch, torchvision, timm, eniops,pyyaml```  
-```torchlightning``` for attackers
+```torch, torchvision, timm, eniops,pyyaml```
 
 ## API of Patch Shuffling
 ### PatchShuffle
@@ -88,20 +87,34 @@ spectral domain.
 python3 main.py --dataset=celeba --k=1. --b 64 --datapath=your-path-to-dataset
 ```
 
-**Train DIFM**
+**Train DIFM**  
+coming sone
+
+## Verify Privacy with Attackers
+Here are code samples for training adveraries.  
+Requirements for attackers ```torchlightning, facenet,facenet-pytorch,transformers,pytorch-msssim```   
+### BlackBox Attack
+Under the folder BlackBoxAttacker, you can directly run  
+```
+python main.py
+```  
+to test the attacker's Generator
+### WhiteBox Attack
+The main logic idea is following the idea of Unsplit[4]. WhiteBox Attack is under folder WhiteBoxAttacker, you can run with following  
+```
+python3 whitebox.py --dataset=celeba --k=0.4 --b 64 --datapath=your-path-to-dataset
+```
+### Adaptive Attack
+It is similar to the black box attack. Place the```model.py``` with the one under AdaptiveAttacker. Then you can run the same code with BlackBox atack to 
+realize adaptive attack
 
 # Comming Soon
 ### Pre-trained Model
 
-## Verify Privacy with Attackers
-
-### BlackBox Attack
-### WhiteBox Attack
-### Adaptive Attack
-
 ## Todo
 * download trained models from group server
 * pretrained model: celeba k=0.4, celeba ps+, cifar10ps, cifar10 bs40
+* project introduction website
 
 # Contact
 Welcome any discussion and problems: dixi.yao@mail.utoronto.ca or directly propose in git issues.
@@ -110,5 +123,5 @@ Welcome any discussion and problems: dixi.yao@mail.utoronto.ca or directly propo
 - [1] Yuan, Li, Yunpeng Chen, Tao Wang, Weihao Yu, Yujun Shi, Zi-Hang Jiang, Francis EH Tay, Jiashi Feng, and Shuicheng Yan. "Tokens-to-token vit: Training vision transformers from scratch on imagenet." In Proceedings of the IEEE/CVF International Conference on Computer Vision, pp. 558-567. 2021.
 - [2] Vaswani, Ashish, Noam Shazeer, Niki Parmar, Jakob Uszkoreit, Llion Jones, Aidan N. Gomez, Łukasz Kaiser, and Illia Polosukhin. "Attention is all you need." Advances in neural information processing systems 30 (2017).
 - [3] Gupta, Otkrist, and Ramesh Raskar. "Distributed learning of deep neural network over multiple agents." Journal of Network and Computer Applications 116 (2018): 1-8.
-
+- [4] Erdogan, Ege, Alptekin Kupcu, and A. Ercument Cicek. "Unsplit: Data-oblivious model inversion, model stealing, and label inference attacks against split learning." arXiv preprint arXiv:2108.09033 (2021).
 

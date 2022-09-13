@@ -77,7 +77,7 @@ parser.add_argument('--transform-value', type=int, default=4,
                     help='Parameter for gdp for blur transformation')
 parser.add_argument('--epoch', type=int, default=60, metavar='N',
                     help='Training Epoch')
-parser.add_argument('--datapath', type=str, default='../../data',
+parser.add_argument('--datapath', type=str, default='../../../data',
                     help='Default path for placing dataset')
 
 args = parser.parse_args()
