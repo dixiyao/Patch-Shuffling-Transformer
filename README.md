@@ -2,7 +2,7 @@
 ![Illustration of different patch shuffling](files/ShowShuffling.PNG)  
 Official Code for ICDM 2022 paper: Privacy-Preserving Split Learning via Patch Shuffling over Transformers  
 [Dixi Yao](https://dixiyao.github.io/), Liyao Xiang, Hengyuan Xu, Hangyu Ye, Yingqi Chen  
-[[Paper]]() [[BibTex]]() [[Website]]()
+[[Paper]]() [[BibTex]]() [[Website]](https://dixiyao.github.io/research.html)
 
 ## Requirements
 ```torch, torchvision, timm, eniops,pyyaml```
@@ -108,13 +108,24 @@ python3 whitebox.py --dataset=celeba --k=0.4 --b 64 --datapath=your-path-to-data
 It is similar to the black box attack. Place the```model.py``` with the one under AdaptiveAttacker. Then you can run the same code with BlackBox atack to 
 realize adaptive attack
 
-# Comming Soon
 ### Pre-trained Model
+You can download some trained models here  
+| Model    | Download|
+| :---      |  :---:   | 
+| CelebA BS 40   | |
+| CelebA PS+     | |
+| Cifar10 BS 75 | [here](https://github.com/dixiyao/PatchShuffling/releases/download/TrainedModel/Cifar10_PS75.pth)| 
 
-## Todo
-* download trained models from group server
-* pretrained model: celeba k=0.4, celeba ps+, cifar10ps, cifar10 bs40
-* project introduction website
+# Results
+## BlackBox Attack defense
+An adversary tries to use the method of black box attack to restore original images. Figures show the rescontruction image comparing our shuffling methods and other baselines.  
+![CelebA](files/BlackBoxCelebA.PNG)  
+## WhiteBox Attack defense
+An adversary tries to use the method of whilte box attack to restore original images. Figures show the rescontruction image comparing our shuffling methods and other baselines.  
+![CelebA](files/WhiteBoxCelebA.PNG)  
+More results please refer to our paper.
+
+# Citation
 
 # Contact
 Welcome any discussion and problems: dixi.yao@mail.utoronto.ca or directly propose in git issues.
