@@ -13,7 +13,7 @@ def train_G(batch_size,max_epochs,net,wrapper):
     valid_loader = DataLoaders.get_loader('cifar10', '../../../data', batch_size, 'valid', num_workers=8, pin_memory=True)
 
     net.total_steps = ((len(train_loader.dataset) // (batch_size)) // 1 * float(max_epochs))
-    #wrapper.fit(net, train_loader, valid_loader)
+    wrapper.fit(net, train_loader, valid_loader)
     wrapper.test(net, valid_loader)
 
 def train():
