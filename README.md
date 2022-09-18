@@ -112,8 +112,8 @@ realize adaptive attack
 You can download some trained models here  
 | Model    | Download|
 | :---      |  :---:   | 
-| CelebA BS 40   | |
-| CelebA PS+     | |
+| CelebA BS 40   | [here](https://github.com/dixiyao/PatchShuffling/releases/download/TrainedModel/Cifar10_PS75.pth) |
+| CelebA PS+     |[here](https://github.com/dixiyao/PatchShuffling/releases/download/TrainedModel/CelebA_PS+.pth) |
 | Cifar10 BS 75 | [here](https://github.com/dixiyao/PatchShuffling/releases/download/TrainedModel/Cifar10_PS75.pth)| 
 
 # Results
