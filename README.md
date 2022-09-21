@@ -2,7 +2,7 @@
 ![Illustration of different patch shuffling](files/ShowShuffling.PNG)  
 Official Code for ICDM 2022 paper: Privacy-Preserving Split Learning via Patch Shuffling over Transformers  
 [Dixi Yao](https://dixiyao.github.io/), Liyao Xiang, Hengyuan Xu, Hangyu Ye, Yingqi Chen  
-[[Paper]]() [[BibTex]]()
+[[Paper]](https://dixiyao.github.io/assets/papers/icdm22.pdf) [[BibTex]]()
 
 ## Requirements
 ```torch, torchvision, timm, eniops,pyyaml```
