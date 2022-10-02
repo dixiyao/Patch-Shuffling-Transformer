@@ -88,7 +88,14 @@ python3 main.py --dataset=celeba --k=1. --b 64 --datapath=your-path-to-dataset
 ```
 
 **Train DIFM**  
-coming sone
+Criteo data set is needed. [You can download the "train.txt" here.](https://www.kaggle.com/datasets/mrkmakr/criteo-dataset) Put "train.txt" in the same path. 
+```
+python3 TrainOnCriteo.py
+```
+Noting that it takes considerable amount of time to preprocess the data. "TrainOnCriteo.py" will save the preprocessed data into "./train.csv" and "./test.csv". Both "train.txt" and "train.csv" are about **10GB**. After that you can run "GoOnTraining.py" without data preprocessing, which is quite a time-saver.
+```
+python3 GoOnTraining.py
+```
 
 ## Verify Privacy with Attackers
 Here are code samples for training adveraries.  
