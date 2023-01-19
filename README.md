@@ -130,9 +130,18 @@ An adversary tries to use the method of black box attack to restore original ima
 ## WhiteBox Attack defense
 An adversary tries to use the method of whilte box attack to restore original images. Figures show the rescontruction image comparing our shuffling methods and other baselines.  
 ![CelebA](files/WhiteBoxCelebA.PNG)  
-More results please refer to our paper.
+For more results please refer to our paper.
 
 # Citation
+```
+@inproceedings{yao2022,
+  title={Privacy-Preserving Split Learning via Patch Shuffling over Transformers},
+  author={Yao, Dixi and Xiang, Liyao and Xu Hengyuan and Ye, Hangyu and Chen, Yingqi},
+  booktitle={2022 IEEE International Conference on Data Mining (ICDM)},
+  year={2022},
+  organization={IEEE}
+}
+```
 
 # Contact
 Welcome any discussion and problems: dixi.yao@mail.utoronto.ca or directly propose in git issues.
