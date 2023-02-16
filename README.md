@@ -1,6 +1,6 @@
 # Privacy-Preserving Split Learning via Patch Shuffling over Transformers
 ![Illustration of different patch shuffling](files/ShowShuffling.PNG)  
-Official Code for ICDM 2022 paper: Privacy-Preserving Split Learning via Patch Shuffling over Transformers  
+Official Code for ICDM 2022 paper: [Privacy-Preserving Split Learning via Patch Shuffling over Transformers](https://ieeexplore.ieee.org/abstract/document/10027647).   
 [Dixi Yao](https://dixiyao.github.io/), Liyao Xiang, Hengyuan Xu, Hangyu Ye, Yingqi Chen  
 <!--[[Paper]](https://dixiyao.github.io/assets/papers/icdm22.pdf) [[BibTex]]()-->
 
@@ -133,15 +133,19 @@ An adversary tries to use the method of whilte box attack to restore original im
 For more results please refer to our paper.
 
 # Citation
+Bibtex
 ```
-@inproceedings{yao2022,
-  title={Privacy-Preserving Split Learning via Patch Shuffling over Transformers},
-  author={Yao, Dixi and Xiang, Liyao and Xu Hengyuan and Ye, Hangyu and Chen, Yingqi},
-  booktitle={2022 IEEE International Conference on Data Mining (ICDM)},
+@INPROCEEDINGS{patchshuffling,
+  author={Yao, Dixi and Xiang, Liyao and Xu, Hengyuan and Ye, Hangyu and Chen, Yingqi},
+  booktitle={2022 IEEE International Conference on Data Mining (ICDM)}, 
+  title={Privacy-Preserving Split Learning via Patch Shuffling over Transformers}, 
   year={2022},
-  organization={IEEE}
+  pages={638-647},
+  doi={10.1109/ICDM54844.2022.00074}
 }
 ```
+D. Yao, L. Xiang, H. Xu, H. Ye and Y. Chen, "Privacy-Preserving Split Learning via Patch Shuffling over Transformers," 2022 IEEE International Conference on Data Mining (ICDM), Orlando, FL, USA, 2022, pp. 638-647, doi: 10.1109/ICDM54844.2022.00074.
+
 
 # Contact
 Welcome any discussion and problems: dixi.yao@mail.utoronto.ca or directly propose in git issues.
