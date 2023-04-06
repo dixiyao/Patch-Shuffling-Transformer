@@ -132,6 +132,15 @@ An adversary tries to use the method of whilte box attack to restore original im
 ![CelebA](files/WhiteBoxCelebA.PNG)  
 For more results please refer to our paper.
 
+# Further extension work
+[Shuffled Transformers for Blind Training](https://openreview.net/pdf?id=sWUlKZOM8kfs)
+
+# Limitation and Discussion
+The current method needs three assumptions: split learning training, tasks are not heavily rely on position encoding, and transformers. As  transformers have demonstrated outstanding performance, the third assumption is valid and our method can work for all pure transformer structures.   
+
+However, the key limitation is that it currently can only be applied to specific tasks where position information will not have much effect on the performance of the targeted tasks. As a result, a promising future work is how we can applied such method to LLM, especially when data privacy has become a major concern in leveraging such models, e.g. ChatGPT.
+ 
+
 # Citation
 Bibtex
 ```
