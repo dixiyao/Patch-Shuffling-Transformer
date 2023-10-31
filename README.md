@@ -5,7 +5,7 @@ Official Code for ICDM 2022 paper: [Privacy-Preserving Split Learning via Patch 
 <!--[[Paper]](https://dixiyao.github.io/assets/papers/icdm22.pdf) [[BibTex]]()-->
 
 ## Requirements
-```torch, torchvision, timm, eniops, pyyaml```
+```torch, torchvision, timm, einops, pyyaml```
 
 ## API of Patch Shuffling
 ### PatchShuffle
