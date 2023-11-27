@@ -145,12 +145,12 @@ However, the key limitation is that it currently can only be applied to specific
 Bibtex
 ```
 @INPROCEEDINGS{patchshuffling,
-  author={Yao, Dixi and Xiang, Liyao and Xu, Hengyuan and Ye, Hangyu and Chen, Yingqi},
-  booktitle={2022 IEEE International Conference on Data Mining (ICDM)}, 
-  title={Privacy-Preserving Split Learning via Patch Shuffling over Transformers}, 
-  year={2022},
-  pages={638-647},
-  doi={10.1109/ICDM54844.2022.00074}
+	author={Yao, Dixi and Xiang, Liyao and Xu, Hengyuan and Ye, Hangyu and Chen, Yingqi},
+	booktitle={Proceedings of the 2022 IEEE International Conference on Data Mining (ICDM)}, 
+	title={{Privacy-{P}reserving Split Learning via Patch Shuffling over Transformers}}, 
+	year={2022},
+	pages={638-647},
+	doi={10.1109/ICDM54844.2022.00074}
 }
 ```
 D. Yao, L. Xiang, H. Xu, H. Ye and Y. Chen, "Privacy-Preserving Split Learning via Patch Shuffling over Transformers," 2022 IEEE International Conference on Data Mining (ICDM), Orlando, FL, USA, 2022, pp. 638-647, doi: 10.1109/ICDM54844.2022.00074.
